@@ -1,0 +1,12 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  # Check npm dependencies in the root (where package.json lives)
+  - package-ecosystem: "npm"
+    directory: "/Frontend"                # Frontend project root
+    schedule:
+      interval: "weekly"          # Run once per week
+    open-pull-requests-limit: 5   # Maximum of 5 open Dependabot PRs at any time
+    labels:
+      - "dependencies"
+      - "automatic"
