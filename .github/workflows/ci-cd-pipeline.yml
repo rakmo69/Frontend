@@ -54,7 +54,7 @@ jobs:
 
       # 1.8 Upload the web-build folder as an artifact
       - name: Upload web-build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: expo-web-build
           path: web-build
